@@ -1,0 +1,12 @@
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\EntityLayer.AssemblyInfo.cs
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\bin\Debug\net7.0\EntityLayer.deps.json
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\bin\Debug\net7.0\EntityLayer.dll
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\bin\Debug\net7.0\EntityLayer.pdb
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\EntityLayer.dll
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\refint\EntityLayer.dll
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\EntityLayer.pdb
+C:\Users\azatc\source\repos\MyBlogPage\EntityLayer\obj\Debug\net7.0\ref\EntityLayer.dll

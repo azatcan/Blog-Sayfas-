@@ -1,0 +1,37 @@
+﻿@model List<EntityLayer.Entities.AppUser>
+@{
+    ViewData["Title"] = "UserRoleList";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<br />
+<br />
+<table class="table table-bordered" id="table">
+    <tr>
+        <th>Kullanıcı Adı</th>
+        <th>Rol Ata</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            
+            <td>@item.UserName</td>          
+            <td> <a href="/Admin/AdminRole/AssignRole/@item.Id" class="btn btn-primary">Rol Ata</a></td>
+            
+
+        </tr>
+    }
+</table>
+
+
+
+
+
+
+
+
+
+
+
+

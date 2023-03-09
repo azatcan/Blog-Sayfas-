@@ -1,0 +1,17 @@
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.deps.json
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.dll
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\bin\Debug\net7.0\EntityLayer.dll
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\bin\Debug\net7.0\EntityLayer.pdb
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.runtimeconfig.json
+C:\Users\azatc\source\repos\MyBlogPage\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache

@@ -1,0 +1,91 @@
+﻿@model EntityLayer.Entities.Article
+
+@{
+    ViewData["Title"] = "ArticleDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container px-4 px-lg-5">
+
+    <div class="row gx-4 gx-lg-5">
+       
+        @await Component.InvokeAsync("CategoryPartial")
+        <div class="col-md-10 col-lg-8 col-xl-7">
+    
+        <div class="post-preview">
+            <a href="#">
+                    <img src="/İmage/@Model.ImagePath" height="275">
+                <h1 class="post-title">@Model.Title</h1>@*<h5 class="post-title">@Model</h5>*@
+                
+            </a>
+            <p class="post-meta">
+                @Model.Content
+                <a href="#!">Start Bootstrap</a>
+                @Model.CreateDate
+            </p>
+        </div>
+            
+    <!-- Post preview-->
+    
+    <!-- Divider-->
+    <hr class="my-4" />
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Yorum Yap
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form method="post" action="/Article/Comment">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Yorum Yapınız</h5>
+
+                            </div>
+                            <div class="modal-body">
+                                
+                                <textarea class="form-control" name="Content" placeholder="Yorum Yazınız..."></textarea>
+                                <input type="hidden" name="ArticleId" value="@Model.Id" />
+                                @foreach (var item in ViewBag.kullanıcı)
+                                {
+                                    <input type="hidden" name="AppUserId" value="@item.AppUserId"/>
+                                }
+                                <input type="hidden" name="Date" value="@DateTime.Now" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                                <button type="submit" class="btn btn-primary">Gönder</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr />
+            <div class="row">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    @foreach (var item in ViewBag.yorum)
+                    {
+                        <h4 style="color:coral">
+                            @item.Date <br />  @item.AppUserId
+                        </h4>
+                        <p>@item.Content</p>
+                        <hr />
+                    }
+                </div>
+            </div>
+
+           
+    <!-- Post preview-->
+           
+
+          
+    <!-- Pager-->
+    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+</div>
+
+
+     
+    </div>
+</div>
+

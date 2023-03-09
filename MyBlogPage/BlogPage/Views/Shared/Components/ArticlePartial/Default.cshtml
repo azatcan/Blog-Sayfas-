@@ -1,0 +1,27 @@
+﻿@model List<EntityLayer.Entities.Article>
+<div class="col-md-10 col-lg-8 col-xl-7">
+    @foreach (var item in Model)
+    {
+        <div class="post-preview">
+            <a href="/Article/ArticleDetails/@item.Id">
+                <img src="/İmage/@item.ImagePath" height="275">
+                <h1 class="post-title">@item.Title</h1>
+                
+            </a>
+            <p class="post-meta">
+                @item.Content
+                <a href="#!">Start Bootstrap</a>
+                @item.CreateDate.ToShortDateString()
+            </p>
+        </div>
+    }
+    <!-- Post preview-->
+    
+    <!-- Divider-->
+    <hr class="my-4" />
+    <!-- Post preview-->
+   
+    <!-- Pager-->
+    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+</div>
+

@@ -1,0 +1,38 @@
+﻿@model List<EntityLayer.Entities.Comments>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<br />
+<br />
+<table class="table table-bordered" id="table">
+    <tr>
+        <th>Yorum Yapan Kişi</th>
+        <th>İçerik</th>
+        <th>Makale</th>
+        <th>Sil</th>
+      
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.AppUserId</td>
+            <td>@item.Content</td>
+            <td>@item.ArticleId</td>
+            <td>@Html.ActionLink("Sil","Delete",new {item.Id},new {@class="btn btn-danger",onclick="return confirm ('silmek istiyormsunuz?')"})</td>
+            
+        </tr>
+    }
+</table>
+
+
+
+
+
+
+
+
+
+

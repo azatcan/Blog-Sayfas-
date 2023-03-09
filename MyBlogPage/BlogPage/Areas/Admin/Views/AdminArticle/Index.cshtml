@@ -1,0 +1,56 @@
+﻿@model List<EntityLayer.Entities.Article>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<a href="/Admin/AdminArticle/Create" class="btn btn-primary">Ekle</a>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Başlık</th>
+        <th>Makale</th>
+        <th>Resim</th>
+        <th>Oluşturulma Tarihi</th>
+
+        <th>Aktif mi</th>
+
+        <th>Makale kategorisi</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Content</td>
+            <td><img src="/İmage/@item.ImagePath" width="80" height="80" />Resim</td>
+            <td>@item.CreateDate</td>
+            @*<td>@item.UpdateDate</td>*@
+            <td>
+                @if (item.IsActive == true)
+                {
+                    <label class="btn btn-success">Evet</label>
+                }
+                else
+                {
+                    <label class="btn btn-danger">Hayır</label>
+                }
+            </td>
+            @*<td>
+        @item.AuthorId
+        </td>*@
+            <td>@item.CategoryId</td>
+            <td>@Html.ActionLink("Sil", "Delete", new { item.Id }, new { @class = "btn btn-danger", onclick = "return confirm ('silmek istiyormsunuz?')" })</td>
+            <td><a class="btn btn-primary" href="/Admin/AdminArticle/Update/@item.Id">Güncelleme</a></td>
+
+        </tr>
+    }
+</table>
+
+
+
+
+
+

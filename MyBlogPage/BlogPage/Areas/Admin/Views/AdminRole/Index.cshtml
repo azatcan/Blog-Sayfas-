@@ -1,0 +1,41 @@
+﻿@model List<EntityLayer.Entities.AppRole>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<a class="btn btn-primary" href="/Admin/AdminRole/Create">Role Ekle</a>
+<br />
+<br />
+<table class="table table-bordered" id="table">
+    <tr>
+        <th>Id</th>
+        <th>Rolü</th>
+        
+        <th>Sil</th>
+        <th>Güncelleme</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+           
+            <td>@Html.ActionLink("Sil","Delete",new {item.Id},new {@class="btn btn-danger",onclick="return confirm ('silmek istiyormsunuz?')"})</td>
+            <td><a class="btn btn-primary" href="/Admin/AdminRole/Update/@item.Id">Güncelleme</a></td>
+          
+        </tr>
+    }
+   
+</table>
+<a class="btn btn-info" href="/Admin/AdminRole/UserRoleList">Kullanıcı Rol Listesi</a>
+
+
+
+
+
+
+
+
+
+
+
